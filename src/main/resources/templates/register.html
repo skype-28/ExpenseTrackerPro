@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Register</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card shadow">
+
+                <div class="card-header text-center">
+
+                    <h3>Expense Tracker Pro</h3>
+
+                    <h5>Create Account</h5>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="alert alert-success"
+                         th:if="${success}"
+                         th:text="${success}">
+                    </div>
+
+                    <div class="alert alert-danger"
+                         th:if="${error}"
+                         th:text="${error}">
+                    </div>
+
+                    <form th:action="@{/register}"
+                          th:object="${registerDto}"
+                          method="post">
+
+                        <div class="mb-3">
+
+                            <label>Full Name</label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   th:field="*{fullName}">
+
+                            <small class="text-danger"
+                                   th:errors="*{fullName}"></small>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Email</label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   th:field="*{email}">
+
+                            <small class="text-danger"
+                                   th:errors="*{email}"></small>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Password</label>
+
+                            <input type="password"
+                                   class="form-control"
+                                   th:field="*{password}">
+
+                            <small class="text-danger"
+                                   th:errors="*{password}"></small>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Register
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

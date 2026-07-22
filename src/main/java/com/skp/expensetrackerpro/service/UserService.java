@@ -1,6 +1,6 @@
-package main.java.com.skp.expensetrackerpro.service;
+package com.skp.expensetrackerpro.service;
 
-import main.java.com.skp.expensetrackerpro.dto.RegisterDto;
+import com.skp.expensetrackerpro.dto.RegisterDto;
 
 public interface UserService {
 

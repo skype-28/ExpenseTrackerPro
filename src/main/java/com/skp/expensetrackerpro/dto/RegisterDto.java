@@ -1,4 +1,4 @@
-package main.java.com.skp.expensetrackerpro.dto;
+package com.skp.expensetrackerpro.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,8 +1,11 @@
-package main.java.com.skp.expensetrackerpro.entity;
+package com.skp.expensetrackerpro.entity;
 
 import javax.annotation.processing.Generated;
 
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -75,4 +78,7 @@ public class User {
     public void setRole(String role) {
         this.role = role;
     }
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Expense> expenses = new ArrayList<>();
 }

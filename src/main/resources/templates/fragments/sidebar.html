@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="sidebar"
+     class="bg-dark text-white vh-100 p-3 shadow"
+     style="width:250px;">
+
+    <h4 class="mb-4">
+
+        Menu
+
+    </h4>
+
+    <ul class="nav flex-column">
+
+        <li class="nav-item mb-2">
+
+            <a class="nav-link text-white"
+               th:href="@{/dashboard}">
+
+                🏠 Dashboard
+
+            </a>
+
+        </li>
+
+        <li class="nav-item mb-2">
+
+            <a class="nav-link text-white"
+               th:href="@{/expenses}">
+
+                💸 Expenses
+
+            </a>
+
+        </li>
+
+        <li class="nav-item mb-2">
+
+            <a class="nav-link text-white"
+               href="#">
+
+                💰 Income
+
+            </a>
+
+        </li>
+
+        <li class="nav-item mb-2">
+
+            <a class="nav-link text-white"
+               href="#">
+
+                📊 Reports
+
+            </a>
+
+        </li>
+
+        <li class="nav-item mb-2">
+
+            <a class="nav-link text-white"
+               href="#">
+
+                🎯 Budget
+
+            </a>
+
+        </li>
+
+        <li class="nav-item mb-2">
+
+            <a class="nav-link text-white"
+               href="#">
+
+                ⚙ Settings
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    font-family: "Segoe UI", sans-serif;
+    background:#f4f6f9;
+}
+
+.summary-card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.summary-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.nav-link{
+    border-radius:10px;
+    padding:12px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    background:#2563eb;
+}
+
+.card{
+    border-radius:15px;
+}
