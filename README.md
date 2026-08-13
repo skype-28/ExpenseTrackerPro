@@ -33,7 +33,7 @@ A modern expense tracking web application built with Spring Boot.
 Clone the repository:
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/ExpenseTrackerPro.git
+git clone https://github.com/skype-28/ExpenseTrackerPro.git
 ```
 
 Configure your MySQL database in:
